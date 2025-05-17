@@ -2,7 +2,7 @@
 <php lang="en">
 
 
-<!-- Mirrored from www.ansonika.com/satisfyc/index-3.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 22:59:21 GMT -->
+<!-- Mirrored from www.ansonika.com/satisfyc/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 22:58:57 GMT -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +30,7 @@
 
 </head>
 
-<body class="style_3">
+<body class="style_2">
 	
 	<div id="preloader">
 		<div data-loader="circle-side"></div>
@@ -49,7 +49,7 @@
 	            <div class="col-7">
 	                <div id="social">
 	                    <ul>
-	                        <li><a href="#0"><i class="bi bi-facebook"></i></a></li>
+	                       <li><a href="#0"><i class="bi bi-facebook"></i></a></li>
 							<li><a href="#0"><i class="bi bi-twitter-x"></i></a></li>
 							<li><a href="#0"><i class="bi bi-instagram"></i></a></li>
 							<li><a href="#0"><i class="bi bi-tiktok"></i></a></li>
@@ -81,43 +81,43 @@
 	                            <div id="progressbar"></div>
 	                        </div>
 	                        <!-- /top-wizard -->
-	                        <form id="wrapped" method="POST" autocomplete="off">
+	                        <form id="wrapped" method="POST" action="save_csv" autocomplete="off">
 	                            <input id="website" name="website" type="text" value="">
 	                            <!-- Leave for security protection, read docs for details -->
 	                            <div id="middle-wizard">
 
 	                                <div class="step">
 	                                    <h3 class="main_question"><strong>1 of 5</strong>How was the service provided?</h3>
-	                                    <div class="review_block_numbers">
+	                                    <div class="review_block_smiles">
 	                                    	<ul class="clearfix">
 	                                    		<li>
-	                                    			 <div class="container_numbers">
+	                                    			 <div class="container_smile">
 	                                                    <input type="radio" id="very_bad_1" name="question_1" class="required" value="Very bad<" onchange="getVals(this, 'question_1');">
-	                                                    <label class="radio very_bad" for="very_bad_1">1</label>
+	                                                    <label class="radio smile_1" for="very_bad_1"><span>Very bad</span></label>
 	                                                </div>
 	                                    		</li>
 	                                    		<li>
-	                                    		 <div class="container_numbers">
+	                                    		 <div class="container_smile">
 	                                                    <input type="radio" id="bad_1" name="question_1" class="required" value="Bad" onchange="getVals(this, 'question_1');">
-	                                                    <label class="radio bad" for="bad_1">2</label>
+	                                                    <label class="radio smile_2" for="bad_1"><span>Bad</span></label>
 	                                                </div>
 	                                    		</li>
 	                                    		<li>
-	                                                <div class="container_numbers">
+	                                                <div class="container_smile">
 	                                                    <input type="radio" id="average_1" name="question_1" class="required" value="Average" onchange="getVals(this, 'question_1');">
-	                                                    <label class="radio average" for="average_1">3</label>
+	                                                    <label class="radio smile_3" for="average_1"><span>Average</span></label>
 	                                                </div>
 	                                            </li>
 	                                            <li>
-	                                                <div class="container_numbers">
+	                                                <div class="container_smile">
 	                                                    <input type="radio" id="good_1" name="question_1" class="required" value="Good" onchange="getVals(this, 'question_1');">
-	                                                    <label class="radio good" for="good_1">4</label>
+	                                                    <label class="radio smile_4" for="good_1"><span>Good</span></label>
 	                                                </div>
 	                                            </li>
 	                                            <li>
-	                                                <div class="container_numbers">
+	                                                <div class="container_smile">
 	                                                    <input type="radio" id="very_good_1" name="question_1" class="required" value="Very Good" onchange="getVals(this, 'question_1');">
-	                                                    <label class="radio very_good" for="very_good_1">5</label>
+	                                                    <label class="radio smile_5" for="very_good_1"><span>Very Good</span></label>
 	                                                </div>
 	                                            </li>
 	                                    	</ul>
@@ -126,7 +126,7 @@
 	                                    			<em>Very Bad</em>
 	                                    		</div>
 	                                    		<div class="col-4 text-end">
-	                                    			<em>Very Good</em>
+	                                    			<em>Excellent</em>
 	                                    		</div>
 	                                    	</div>
 	                                    </div>
@@ -373,5 +373,5 @@
 
 </body>
 
-<!-- Mirrored from www.ansonika.com/satisfyc/index-3.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 22:59:21 GMT -->
+<!-- Mirrored from www.ansonika.com/satisfyc/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 22:59:04 GMT -->
 </php>
