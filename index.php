@@ -10,7 +10,6 @@
 <?php
 session_start();
 error_reporting(0);
-//holaamigodeyotube
 function obtenerDatosEmpresa($id) {
     $archivo = fopen("csvfiles/empresas.csv", "r");
     if ($archivo !== FALSE) {
