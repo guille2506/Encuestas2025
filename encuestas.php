@@ -51,7 +51,7 @@ function obtenerOraciones($idempresa, $nro_bloque) {
                     <li><a href="#"><i class="bi bi-facebook"></i></a></li>
                     <li><a href="#"><i class="bi bi-instagram"></i></a></li>
                     <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
-                <!-- </ul> -->
+                </ul>
             </div>
         </div>
     </div>
