@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="css/style.css"> <!-- Asegúrate que esta ruta sea correcta -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
-
 <?php
 session_start();
 error_reporting(0);
-
+//holaamigodeyotube
 function obtenerDatosEmpresa($id) {
     $archivo = fopen("csvfiles/empresas.csv", "r");
     if ($archivo !== FALSE) {
@@ -69,13 +68,14 @@ function obtenerAlumnos($idempresa) {
     </div>
 </header>
 
-<div class="wrapper_centering">
-    <div class="container_centering">
+<div class="wrapper_centering"><div class="full_center_container">
+    <div class="container_centering"><div class="centered-content">
         <div class="container">
             <div class="row justify-content-center">
                 <!-- Formulario Clave -->
                 <div class="col-lg-6" id="contrasena_container">
                     <form class="form" onsubmit="event.preventDefault(); verificarClave();">
+                         <img src="images/Logo2.png" alt="Logo" style="height: 100px; margin-bottom: 20px;">
                         <h3>Encuestas Clima Laboral</h3>
                         <div class="form-group">
                             <label for="clave">Contraseña de la Empresa</label>
