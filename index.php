@@ -58,11 +58,6 @@ function obtenerAlumnos($idempresa) {
                 <a href="index.php"><img src="images/Logo2.png" alt="Logo" height="55"></a>
             </div>
             <div class="col-6 text-end">
-                <ul id="social" style="list-style: none; display: flex; gap: 10px; justify-content: end;">
-                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                    <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
-                </ul>
             </div>
         </div>
     </div>
