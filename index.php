@@ -94,7 +94,7 @@ function obtenerAlumnos($idempresa) {
 </div>
 
 <?php
-$empresas = ["AGC", "Naelf", "Castellanas", "Gaudium", "DelParque"];
+$empresas = ["AGC", "Los Troncos", "Castellanas", "Gaudium", "DelParque"];
 
 foreach ($empresas as $index => $empresa) {
     $id = $index + 1;
