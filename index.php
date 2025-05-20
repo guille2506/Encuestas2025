@@ -54,7 +54,6 @@ function obtenerAlumnos($idempresa) {
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-6">
-                <a href="index.php"><img src="images/Logo2.png" alt="Logo" height="55"></a>
             </div>
             <div class="col-6 text-end">
             </div>
