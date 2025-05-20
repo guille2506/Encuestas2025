@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <title>Encuestas Integración V6</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"> <!-- Asegúrate que esta ruta sea correcta -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- dejar este primero para que cargue despues los estilos tk -->
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <?php
 session_start();
 error_reporting(0);
-//holaamigodeyotube
 function obtenerDatosEmpresa($id) {
     $archivo = fopen("csvfiles/empresas.csv", "r");
     if ($archivo !== FALSE) {
