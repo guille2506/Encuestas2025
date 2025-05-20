@@ -61,7 +61,7 @@ strong {
 label {
   font-weight: 400;
   margin-bottom: 3px;
-  color: #ccc;
+  color: #5f5d5d;
 }
 hr {
   margin: 30px 0 30px 0;
@@ -789,15 +789,16 @@ span.error:after {
   font-size: 14px;
   font-size: 0.875rem;
   height: calc(2.85rem + 2px);
-  color: #fff;
+  color: #000000;
   font-weight: 500;
   background-color: rgba(0, 0, 0, 0.4);
+  
 }
 .form-control:focus {
   box-shadow: none;
   border: none;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.4);
+  color: #1b1b1b;
+  background-color: rgba(5, 5, 5, 0.4);
 }
 .review_message {
   height: 250px !important;
@@ -1521,4 +1522,26 @@ body[dir="rtl"] .fl-form .fl-wrap-select:after {
 .centered-content {
     text-align: center;
 }
+/* Agregar un contenedor blanco al index.php */
+  .col-lg-6 {
+    width: 90%;
+    max-width: 400px;
+    background: linear-gradient(#ffffff, #f0f0f0) padding-box, 
+                linear-gradient(145deg, transparent 35%, rgba(240, 240, 240, 0.873), rgba(64, 201, 255, 0.681)) border-box;
+    border: 4px solid transparent;
+    padding: 2rem;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 2s ease infinite;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+  }
 /*llegaste al final
+
