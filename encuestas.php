@@ -58,7 +58,7 @@ function obtenerOraciones($idempresa, $nro_bloque) {
             <div class="row justify-content-between">
                 <div class="col-xl-6 col-lg-6 d-flex align-items-center">
                     <div class="main_title_1">
-                        <h3><img src="images/recursos-logo.png" width="80" height="80" alt=""> Bienvenido</h3>
+                        <h3><img src="images/recursos-logo11.png" width="80" height="80" alt=""> Bienvenido</h3>
                         <p>Por favor responda las siguientes preguntas con sinceridad. Sus respuestas son completamente anónimas y nos ayudarán a mejorar.</p>
                         <p><em>- Equipo de Encuestas</em></p>
                     </div>
