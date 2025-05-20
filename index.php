@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <title>Encuestas Integración V6</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"> <!-- Asegúrate que esta ruta sea correcta -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- dejar este primero para que cargue despues los estilos tk -->
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <?php
 session_start();
 error_reporting(0);
-//holaamigodeyotube
 function obtenerDatosEmpresa($id) {
     $archivo = fopen("csvfiles/empresas.csv", "r");
     if ($archivo !== FALSE) {
@@ -58,11 +57,6 @@ function obtenerAlumnos($idempresa) {
                 <a href="index.php"><img src="images/Logo2.png" alt="Logo" height="55"></a>
             </div>
             <div class="col-6 text-end">
-                <ul id="social" style="list-style: none; display: flex; gap: 10px; justify-content: end;">
-                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                    <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
-                </ul>
             </div>
         </div>
     </div>
@@ -95,7 +89,7 @@ function obtenerAlumnos($idempresa) {
 </div>
 
 <?php
-$empresas = ["AGC", "Naelf", "Castellanas", "Gaudium", "DelParque"];
+$empresas = ["AGC", "Los Troncos", "Castellanas", "Gaudium", "DelParque"];
 
 foreach ($empresas as $index => $empresa) {
     $id = $index + 1;

@@ -47,11 +47,6 @@ function obtenerOraciones($idempresa, $nro_bloque) {
                 <a href="index.php"><img src="<?= htmlspecialchars($logo_empresa) ?>" alt="Logo" height="55"></a>
             </div>
             <div class="col-6 text-end">
-                <ul id="social" style="list-style: none; display: flex; gap: 10px; justify-content: end;">
-                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                    <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
-                </ul>
             </div>
         </div>
     </div>
@@ -63,7 +58,7 @@ function obtenerOraciones($idempresa, $nro_bloque) {
             <div class="row justify-content-between">
                 <div class="col-xl-6 col-lg-6 d-flex align-items-center">
                     <div class="main_title_1">
-                        <h3><img src="images/recursos-logo.png" width="80" height="80" alt=""> Bienvenido</h3>
+                        <h3><img src="images/recursos-logo11.png" width="80" height="80" alt=""> Bienvenido</h3>
                         <p>Por favor responda las siguientes preguntas con sinceridad. Sus respuestas son completamente anónimas y nos ayudarán a mejorar.</p>
                         <p><em>- Equipo de Encuestas</em></p>
                     </div>
