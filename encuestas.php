@@ -31,7 +31,7 @@ function obtenerOraciones($idempresa, $nro_bloque) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MATE con tnt</title>
+    <title>Encuesta Empresa</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/vendors.css" rel="stylesheet">
