@@ -31,7 +31,7 @@ function obtenerOraciones($idempresa, $nro_bloque) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Encuesta Empresa</title>
+    <title>MATE con tnt</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/vendors.css" rel="stylesheet">
@@ -255,14 +255,9 @@ document.getElementById("wrapped").addEventListener("submit", function(e) {
             });
         });
 
-        showThankYouModal();
     });
 });
 
-function showThankYouModal(){
-  alert("¡Gracias por su participación!");
-  window.location.href = "index.php";
-}
 </script>
 
 
