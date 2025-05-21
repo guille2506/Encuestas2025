@@ -9,7 +9,7 @@ body {
   color: #444;
 }
 body.style_1 {
-  background: #c8d454 url(../img/pattern_3.svg) no-repeat center left;
+  background: #c8d454 url(../images/pattern_3.svg) no-repeat center left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +21,7 @@ body.style_1 {
   }
 }
 body.style_2 {
-  background: rgb(19, 121, 27) url(../img/pattern_3.svg) no-repeat center left;
+  background: rgb(19, 121, 27) url(../images/pattern_3.svg) no-repeat center left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -33,7 +33,7 @@ body.style_2 {
   }
 }
 body.style_3 {
-  background: #b65742 url(../img/pattern_3.svg) no-repeat center left;
+  background: #b65742 url(../images/pattern_3.svg) no-repeat center left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
