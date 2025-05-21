@@ -1080,7 +1080,7 @@ span.error:after {
 .container_smile .radio {
   position: relative;
   background-color: #000;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgb(241 239 239 / 53%);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -1355,7 +1355,7 @@ span.error:after {
 .fl-form .fl-is-active select.fl-select,
 .fl-form .fl-is-active textarea.fl-textarea {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgb(153 151 151 / 36%);
   border-color: none;
 }
 .fl-form .fl-has-focus input.fl-input,
