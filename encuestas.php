@@ -43,9 +43,6 @@ function obtenerOraciones($idempresa, $nro_bloque) {
 <header>
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-6">
-                <a href="index.php"><img src="<?= htmlspecialchars($logo_empresa) ?>" alt="Logo" height="55"></a>
-            </div>
             <div class="col-6 text-end">
             </div>
         </div>
@@ -265,6 +262,70 @@ document.getElementById("wrapped").addEventListener("submit", function(e) {
 function showThankYouModal(){
   alert("¡Gracias por su participación!");
   window.location.href = "index.php";
+}
+</script>
+
+
+<script>
+document.getElementById("wrapped").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const datos = {
+        idempresa: document.getElementById("idempresa").value,
+        nombreempresa: document.getElementById("nombreempresa").value,
+        sexo: document.getElementById("sexo").value,
+        edad: document.getElementById("edad").value,
+        area: document.getElementById("area").value,
+        antiguedad: document.getElementById("antiguedad").value,
+        niveleducativo: document.getElementById("niveleducativo").value
+    };
+
+    fetch("saveSurveyed.php", {
+        method: "POST",
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        body: new URLSearchParams(datos)
+    }).then(() => {
+        const bloquesRespuestas = {};
+        const pasos = document.querySelectorAll(".step");
+
+        pasos.forEach((bloque) => {
+            const titulo = bloque.querySelector("h3.main_question")?.textContent.trim() || "";
+            const match = titulo.match(/^\d+\s+(.*)/); 
+            const nombreBloque = match ? match[1] : null;
+            if (!nombreBloque) return;
+
+            if (!bloquesRespuestas[nombreBloque]) {
+                bloquesRespuestas[nombreBloque] = { respuestas: [], texto: "" };
+            }
+
+            const radios = bloque.querySelectorAll("input[type='radio']:checked");
+            radios.forEach(r => bloquesRespuestas[nombreBloque].respuestas.push(r.value));
+
+            const textarea = bloque.querySelector("textarea");
+            if (textarea && textarea.value.trim()) {
+                bloquesRespuestas[nombreBloque].texto = textarea.value.trim();
+            }
+        });
+
+        Object.entries(bloquesRespuestas).forEach(([nombreBloque, datosBloque]) => {
+            fetch("saveAnswers.php", {
+                method: "POST",
+                headers: {"Content-Type": "application/x-www-form-urlencoded"},
+                body: new URLSearchParams({
+                    nombrebloque: nombreBloque,
+                    bloque: JSON.stringify(datosBloque.respuestas),
+                    respLibre: datosBloque.texto
+                })
+            });
+        });
+
+        showThankYouModal();
+    });
+});
+
+function showThankYouModal() {
+    alert("¡Gracias por participar!");
+    window.location.href = "index.php";
 }
 </script>
 
