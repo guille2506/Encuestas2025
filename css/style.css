@@ -96,7 +96,7 @@ a {
 }
 a:hover,
 a:focus {
- background-color: #4ccd6a;
+ background-color: #00000067;
 }
 a.animated_link {
   position: relative;
@@ -175,7 +175,7 @@ a.btn_1,
 }
 a.btn_1:hover,
 .btn_1:hover {
-  background-color: #4ccd6a;
+  background-color: #00000067;
 }
 #preloader {
   position: fixed;
