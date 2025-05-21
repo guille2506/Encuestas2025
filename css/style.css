@@ -21,7 +21,7 @@ body.style_1 {
   }
 }
 body.style_2 {
-  background: rgb(19, 121, 27) url(../img/pattern_3.svg) no-repeat center left;
+  background: rgb(42, 74, 219) url(../img/pattern_3.svg) no-repeat center left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -61,7 +61,14 @@ strong {
 label {
   font-weight: 400;
   margin-bottom: 3px;
-  color: #5f5d5d;
+  display: inline-block;
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: #fff7f7;
+  background-color: #00000067;
+  padding: 8px 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
 }
 hr {
   margin: 30px 0 30px 0;
@@ -795,7 +802,7 @@ span.error:after {
   height: calc(2.85rem + 2px);
   color: #000000;
   font-weight: 500;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(245, 240, 240, 0.4);
   
 }
 .form-control:focus {
@@ -1075,7 +1082,7 @@ span.error:after {
 .container_smile .radio {
   position: relative;
   background-color: #000;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgb(241 239 239 / 53%);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -1350,7 +1357,7 @@ span.error:after {
 .fl-form .fl-is-active select.fl-select,
 .fl-form .fl-is-active textarea.fl-textarea {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgb(153 151 151 / 36%);
   border-color: none;
 }
 .fl-form .fl-has-focus input.fl-input,
@@ -1535,7 +1542,7 @@ body[dir="rtl"] .fl-form .fl-wrap-select:after {
   .col-lg-6 {
     width: 320%;
     max-width: 500px;
-    background: linear-gradient(#ffffff, #f0f0f0) padding-box, 
+    background: linear-gradient(#fefeff, #4e7dff) padding-box, 
                 linear-gradient(145deg, transparent 35%, rgba(240, 240, 240, 0.873), rgba(64, 201, 255, 0.681)) border-box;
     border: 5px solid transparent;
     padding: 5rem;
@@ -1555,7 +1562,7 @@ body[dir="rtl"] .fl-form .fl-wrap-select:after {
   .col-lg-10 {
     width: 320%;
     max-width: 560px;
-    background: linear-gradient(#ffffff, #f0f0f0) padding-box, 
+    background: linear-gradient(#fefeff, #4e7dff) padding-box, 
                 linear-gradient(145deg, transparent 35%, rgba(240, 240, 240, 0.873), rgba(64, 201, 255, 0.681)) border-box;
     border: 5px solid transparent;
     padding: 5rem;
