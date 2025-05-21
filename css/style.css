@@ -89,9 +89,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: rgb(118, 119, 118);
-  text-decoration: none;
-  outline: none;
+ background-color: #4ccd6a;
 }
 a.animated_link {
   position: relative;
@@ -146,7 +144,7 @@ a.btn_1,
 .btn_1 {
   border: none;
   color: #fff;
-  background: #434bdf;
+  background: #000000;
   outline: none;
   cursor: pointer;
   display: inline-block;
