@@ -65,7 +65,9 @@ function obtenerOraciones($idempresa, $nro_bloque) {
                 </div>
                 <div class="col-xl-5 col-lg-5">
                     <div id="wizard_container">
-                        <div id="top-wizard"><div id="progressbar"></div></div>
+                        <div id="top-wizard">
+                            <div id="progressbar" style="background: #e9ecef; border-radius: 4px; height: 10px; width: 100%; margin-bottom: 20px;">
+                            <div id="progressbar-value" style="background: #28a745; height: 100%; width: 0%; border-radius: 4px; transition: width 0.3s;"></div></div>
                         <form id="wrapped" method="POST">
                             <input type="hidden" id="idempresa" value="<?= htmlspecialchars($id_empresa) ?>">
                             <input type="hidden" id="nombreempresa" value="<?= htmlspecialchars($nombre_empresa) ?>">
@@ -165,11 +167,18 @@ $(document).ready(function () {
     let currentStep = 0;
     const steps = $(".step");
 
+    function updateProgressBar(index) {
+        const total = steps.length;
+        const percent = Math.round((index + 1) / total * 100);
+        $("#progressbar-value").css("width", percent + "%");
+    }
+
     function showStep(index) {
         steps.hide().eq(index).fadeIn();
         $(".backward").toggle(index > 0);
         $(".forward").toggle(index < steps.length - 1);
         $(".submit").toggle(index === steps.length - 1);
+        updateProgressBar(index); // <-- Esto actualiza la barra
     }
 
     function validateStep(index) {

@@ -9,7 +9,7 @@ body {
   color: #444;
 }
 body.style_1 {
-  background: #c8d454 url(../img/pattern_3.svg) no-repeat center left;
+  background: #c8d454 url(../images/pattern_3.svg) no-repeat center left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +21,7 @@ body.style_1 {
   }
 }
 body.style_2 {
-  background: rgb(42, 74, 219) url(../img/pattern_3.svg) no-repeat center left;
+  background: rgb(42, 74, 219) url(../images/pattern_3.svg) no-repeat center left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -33,7 +33,7 @@ body.style_2 {
   }
 }
 body.style_3 {
-  background: #b65742 url(../img/pattern_3.svg) no-repeat center left;
+  background: #b65742 url(../images/pattern_3.svg) no-repeat center left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -96,9 +96,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: rgb(118, 119, 118);
-  text-decoration: none;
-  outline: none;
+ background-color: #4ccd6a;
 }
 a.animated_link {
   position: relative;
@@ -153,7 +151,7 @@ a.btn_1,
 .btn_1 {
   border: none;
   color: #fff;
-  background: #434bdf;
+  background: #000000;
   outline: none;
   cursor: pointer;
   display: inline-block;
