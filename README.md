@@ -1,1 +1,0 @@
-# Encuestas2025
