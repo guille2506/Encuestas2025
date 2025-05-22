@@ -1,5 +1,8 @@
 <?php
-session_start();
+include_once("classes/Session.php");
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 date_default_timezone_set("America/Argentina/Buenos_Aires");
 require_once 'database.class.php';
 
@@ -87,7 +90,8 @@ class Surveyed{
         $r = $objDB->Insert('encuestados', $aux);
         
         $_SESSION["idencuestado"] = $r['insert_id'];
-
+        $s = new user_session;
+        $s->deleteinfo();
     }
 }
 ?>

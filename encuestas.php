@@ -1,6 +1,8 @@
 <?php
-session_start();
+include_once("classes/Session.php");
+$s = new user_session;
 error_reporting(0);
+// $s->destroySession();
 
 $id_empresa = $_GET["id"];
 $nombre_empresa = $_GET["nombre"];
@@ -75,7 +77,7 @@ function obtenerOraciones($idempresa, $nro_bloque) {
                                     function renderSelect($id, $label, $options) {
                                         echo "<div class='form-group'>";
                                         echo "<label for='{$id}'>{$label}</label>";
-                                        echo "<select id='{$id}' name='{$id}' class='form-control required'>";
+                                        echo "<select id='{$id}' name='{$id}' class='form-control required' onchange='SetValueSession(this.id,this.value)'>";
                                         echo "<option value=''>Seleccione una opción</option>";
                                         foreach ($options as $array) {
                                             foreach ($array as $val) {
@@ -114,7 +116,7 @@ function obtenerOraciones($idempresa, $nro_bloque) {
                                                     $i++;
                                                     $name = "bloque{$nro_bloque}_pregunta{$stepCount}_{$i}";
                                                     if (substr($oracion, -1) == "?") {
-                                                        echo "<div class='form-group'><label>$oracion</label><textarea name='$name' class='form-control required' rows='3'></textarea></div>";
+                                                        echo "<div class='form-group'><label>$oracion</label><textarea name='$name' class='form-control required' rows='3' onchange='SetValueSession(this.id,this.value)'></textarea></div>";
                                                     } else {
                                                         echo "<div class='form-group'><label>$oracion</label><div class='review_block_smiles'><ul class='clearfix'>";
                                                         $valor = 0;
@@ -123,7 +125,7 @@ function obtenerOraciones($idempresa, $nro_bloque) {
                                                                 $valor++;
                                                                 $id_radio = "{$name}_{$valor}";
                                                                 echo "<li><div class='container_smile'>";
-                                                                echo "<input type='radio' id='$id_radio' name='$name' value='$valor' class='required'>";
+                                                                echo "<input type='radio' id='$id_radio' name='$name' value='$valor' class='required' onchange='SetValueSession(this.id,this.value)'>";
                                                                 echo "<label class='radio smile_$valor' for='$id_radio'><span>$escala</span></label>";
                                                                 echo "</div></li>";
                                                             }
@@ -160,6 +162,64 @@ function obtenerOraciones($idempresa, $nro_bloque) {
 <script src="js/common_scripts.min.js"></script>
 <script src="js/functions.js"></script>
 <script>
+function BuscarActivarSelect(id, data){
+    if(id == "id_empresa"){
+        const formData = new FormData();
+        formData.append('d', id +"_"+ data);
+
+        fetch('classes/Session.php', {
+            method: 'POST',
+            body: formData
+        });  
+    }else{
+        select = document.querySelectorAll("#"+id);
+        select.value = data
+        select[0].childNodes.forEach(child => {
+            if(child.value == data){
+                child.setAttribute("selected","selected");
+            }
+        });
+    }
+}
+function BuscarActivarOption(id,data){
+    elem = document.querySelectorAll("#"+id);
+    elem[0].value = data
+    elem[0].setAttribute("checked","checked");
+}
+function BuscarActivarTextArea(id,data){
+    elem = document.querySelectorAll("#"+id);
+    elem[0].value = data
+}
+function setDataForms(){
+    var optionData;
+    const formData = new FormData();
+        formData.append('gall', "a");
+
+        fetch('classes/Session.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json()) // <-- porque devolvemos JSON
+        .then(result => {
+        optionData = result.data;
+        
+        console.log(optionData)
+        var filasArr = optionData.split("//");
+        var arrAllData = [];
+        filasArr.forEach(element => { 
+            if(element != "||" && element != ""){
+                elem = element.split("||")
+                if(! elem[0].includes("bloque") && ! elem[0].includes("respuestaLibre")){
+                    BuscarActivarSelect(elem[0],elem[1])
+                }else if (elem[0].includes("respuestaLibre")){
+                    BuscarActivarTextArea(elem[0],elem[1])
+                }else{
+                    BuscarActivarOption(elem[0],elem[1])
+                }
+            } 
+        });
+    });
+}
 $(document).ready(function () {
     let currentStep = 0;
     const steps = $(".step");
@@ -206,6 +266,8 @@ $(document).ready(function () {
     });
 
     showStep(currentStep);
+    
+    setDataForms();
 });
 </script>
 <script>
@@ -322,6 +384,22 @@ function showThankYouModal() {
     alert("¡Gracias por participar!");
     window.location.href = "index.php";
 }
+function SetValueSession(id,data){
+    console.log(id)
+
+    const formData = new FormData();
+        formData.append('s', id +"-"+ data);
+
+        fetch('classes/Session.php', {
+            method: 'POST',
+            body: formData
+        });   
+}
+window.onbeforeunload = function (event) {
+    event.preventDefault(); // Esto es necesario para que la alerta funcione
+    event.returnValue = ''; // Esto es necesario para mostrar el mensaje en Chrome
+    return '¿Estás seguro de que quieres actualizar la página? Puedes perder datos.';
+};
 </script>
 
 </body>

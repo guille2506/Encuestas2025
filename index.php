@@ -152,10 +152,10 @@ function mostrarEmpresa(id) {
   window.addEventListener("load", () => {
     const preloader = document.getElementById("preloader");
     if (preloader) {
-      preloader.classList.add("fade-out"); // inicia desvanecimiento
+      preloader.classList.add("fade-out"); 
       setTimeout(() => {
-        preloader.remove(); // lo elimina después de la transición
-      }, 1000); // tiempo igual al de transition en CSS
+        preloader.remove(); 
+      }, 1000); 
     }
   });
 </script>
