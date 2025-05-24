@@ -32,7 +32,7 @@ function obtenerOraciones($idempresa, $nro_bloque) {
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encuesta Empresa</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -43,8 +43,9 @@ function obtenerOraciones($idempresa, $nro_bloque) {
 <div id="preloader"><div data-loader="circle-side"></div></div>
 
 <header>
-    <div class="container-fluid">
-        <div class="row align-items-center">
+    <div class="container">
+            <div class="container-fluid">
+                <div class="row align-items-center">
             <div class="col-6 text-end">
             </div>
         </div>

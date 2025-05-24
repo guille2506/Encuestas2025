@@ -17,7 +17,8 @@ body.style_1 {
 }
 @media (max-width: 767px) {
   body.style_1 {
-    background: #b2d31e;
+    background: #b2d31e url(../images/pattern_3.svg) no-repeat center left;
+    background-size: cover;
   }
 }
 body.style_2 {
@@ -296,10 +297,9 @@ a.btn_1:hover,
 input#website {
   display: none;
 }
-html,
-body {
+html, body {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -377,7 +377,6 @@ footer ul li a:hover {
   clear: both;
   display: table;
   position: relative;
-  overflow: hidden;
   z-index: 1;
   background: -moz-linear-gradient(
     165deg,
@@ -1513,7 +1512,8 @@ body[dir="rtl"] .fl-form .fl-wrap-select:after {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: auto;
+    padding: 2rem 1rem;
     text-align: center;
 }
 
@@ -1523,7 +1523,7 @@ body[dir="rtl"] .fl-form .fl-wrap-select:after {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: auto;
     flex-direction: column;
     margin: 0; 
     padding: 10px 0; 
@@ -1537,7 +1537,7 @@ body[dir="rtl"] .fl-form .fl-wrap-select:after {
 }
 /* Agregar un contenedor blanco al index.php */
   .col-lg-6 {
-    width: 320%;
+    width: 100%;
     max-width: 500px;
     background: linear-gradient(#fefeff, #7d9ef7) padding-box, 
                 linear-gradient(145deg, transparent 35%, rgba(240, 240, 240, 0.873), rgba(64, 201, 255, 0.681)) border-box;
@@ -1557,7 +1557,7 @@ body[dir="rtl"] .fl-form .fl-wrap-select:after {
     align-items: center;
   }
   .col-lg-10 {
-    width: 320%;
+    width: 100%;
     max-width: 560px;
     background: linear-gradient(#fefeff, #4e7dff) padding-box, 
                 linear-gradient(145deg, transparent 35%, rgba(240, 240, 240, 0.873), rgba(64, 201, 255, 0.681)) border-box;
@@ -1578,11 +1578,12 @@ body[dir="rtl"] .fl-form .fl-wrap-select:after {
     
   }
  /* Estilos para pantallas grandes */
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .col-lg-6 {
     width: 100%;
-    height: 50.40%;
+    max-width: 500px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -1595,6 +1596,7 @@ body[dir="rtl"] .fl-form .fl-wrap-select:after {
     width: 100%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
@@ -1615,11 +1617,12 @@ body[dir="rtl"] .fl-form .fl-wrap-select:after {
     height: auto;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .col-lg-10 {
     width: 100%;
     height: 50.40%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -1631,6 +1634,7 @@ body[dir="rtl"] .fl-form .fl-wrap-select:after {
     width: 100%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
@@ -1651,6 +1655,12 @@ body[dir="rtl"] .fl-form .fl-wrap-select:after {
     height: auto;
   }
 }
-
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
 /*llegaste al final
 
