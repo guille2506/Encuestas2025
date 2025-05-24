@@ -89,8 +89,8 @@ function obtenerOraciones($idempresa, $nro_bloque) {
 
                                     renderSelect('sexo', 'Género', $fun->leergeneros($id_empresa.'/csvfiles/generos.csv'));
                                     renderSelect('edad', 'Edad', $fun->leeredades($id_empresa.'/csvfiles/edades.csv'));
-                                    renderSelect('area', 'Área', $fun->leerareas($id_empresa.'/csvfiles/areas.csv'));
-                                    renderSelect('antiguedad', 'Antigüedad', $fun->leerantiguedad($id_empresa.'/csvfiles/antiguedad.csv'));
+                                   // renderSelect('area', 'Área', $fun->leerareas($id_empresa.'/csvfiles/areas.csv'));//
+                                   // renderSelect('antiguedad', 'Antigüedad', $fun->leerantiguedad($id_empresa.'/csvfiles/antiguedad.csv'));//
                                     renderSelect('niveleducativo', 'Nivel educativo', $fun->leerniveleducativo($id_empresa.'/csvfiles/niveleducativo.csv'));
                                     ?>
                                 </div>
