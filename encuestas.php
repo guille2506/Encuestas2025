@@ -61,11 +61,11 @@ function obtenerOraciones($idempresa, $nro_bloque) {
                         <h3><img src="images/recursos-logo11.png" width="80" height="80" alt=""> Bienvenido</h3>
                         <p>Por favor responda las siguientes preguntas con sinceridad. Sus respuestas son completamente anónimas y nos ayudarán a mejorar.</p>
                         <p><em>Escala de Respuestas:</em></p>
-                           <span style="color: red; font-weight: bold;">NUNCA</span><br>
-                           <span style="color: orange; font-weight: bold;">RARA VEZ</span><br>
-                           <span style="color: gold; font-weight: bold;">A VECES</span><br>
-                           <span style="color: lightgreen; font-weight: bold;">CASI SIEMPRE</span><br>
-                           <span style="color: green; font-weight: bold;">SIEMPRE</span>
+                           <span style="color: red; font-weight: bold;">NUNCA 😠</span><br>
+                           <span style="color: orange; font-weight: bold;">RARA VEZ 😕</span><br>
+                           <span style="color: gold; font-weight: bold;">A VECES 😐</span><br>
+                           <span style="color: lightgreen; font-weight: bold;">CASI SIEMPRE 🙂</span><br>
+                           <span style="color: green; font-weight: bold;">SIEMPRE 😄</span>
                         </p>
                     </div>
                 </div>
