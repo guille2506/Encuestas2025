@@ -106,7 +106,7 @@ function obtenerOraciones($idempresa, $nro_bloque) {
                                             $oraciones = array_slice($oraciones, 1); 
 
                                             $total = count($oraciones);
-                                            $chunked = array_chunk($oraciones, 3); 
+                                            $chunked = array_chunk($oraciones, 6); //6 preguntas por cada bloque//
 
                                             foreach ($chunked as $grupo) {
                                                 echo "<div class='step'>";
