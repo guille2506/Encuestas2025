@@ -68,29 +68,20 @@ $(function() {
             $("input[name='gridRadio4-5']:checked").val(),
             $("input[name='gridRadio4-6']:checked").val()
         ];
-        var respBloque5 = [
-            $("input[name='gridRadio5-1']:checked").val(),
-            $("input[name='gridRadio5-2']:checked").val(),
-            $("input[name='gridRadio5-3']:checked").val(),
-            $("input[name='gridRadio5-4']:checked").val(),
-            $("input[name='gridRadio5-5']:checked").val(),
-            $("input[name='gridRadio5-6']:checked").val()
-        ];
+       
 
         var respLibres = [
             $('#respuestaLibre1').val(),
             $('#respuestaLibre2').val(),
             $('#respuestaLibre3').val(),
-            $('#respuestaLibre4').val(),
-            $('#respuestaLibre5').val()
+            $('#respuestaLibre4').val()
         ];
 
         var bloques = [
             JSON.stringify(respBloque1),
             JSON.stringify(respBloque2),
             JSON.stringify(respBloque3),
-            JSON.stringify(respBloque4),
-            JSON.stringify(respBloque5)
+            JSON.stringify(respBloque4)
         ];
 
         // Verificar que todos los bloques tengan respuestas válidas

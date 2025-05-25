@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const btnAnterior = document.querySelector('.btn-anterior');
     const btnFinalizar = document.querySelector('.btn-finalizar');
     const mensajeError = document.querySelector('.mensaje');
-    const totalBloques = 5; totalBloques;  // Get the total number of blocks from PHP
+    const totalBloques = 4; totalBloques;  // Get the total number of blocks from PHP
 
     btnSiguiente.addEventListener('click', function() {
         const bloqueActual = parseInt(this.getAttribute('data-bloque'));
