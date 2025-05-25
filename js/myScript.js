@@ -42,9 +42,7 @@ $(function() {
             $("input[name='gridRadio1-3']:checked").val(),
             $("input[name='gridRadio1-4']:checked").val(),
             $("input[name='gridRadio1-5']:checked").val(),
-            $("input[name='gridRadio1-6']:checked").val(),
-            $("input[name='gridRadio1-7']:checked").val(),
-            $("input[name='gridRadio1-8']:checked").val()
+            $("input[name='gridRadio1-6']:checked").val()
         ];
         var respBloque2 = [
             $("input[name='gridRadio2-1']:checked").val(),
@@ -52,9 +50,7 @@ $(function() {
             $("input[name='gridRadio2-3']:checked").val(),
             $("input[name='gridRadio2-4']:checked").val(),
             $("input[name='gridRadio2-5']:checked").val(),
-            $("input[name='gridRadio2-6']:checked").val(),
-            $("input[name='gridRadio2-7']:checked").val(),
-            $("input[name='gridRadio2-8']:checked").val()
+            $("input[name='gridRadio2-6']:checked").val()
         ];
         var respBloque3 = [
             $("input[name='gridRadio3-1']:checked").val(),
@@ -62,9 +58,7 @@ $(function() {
             $("input[name='gridRadio3-3']:checked").val(),
             $("input[name='gridRadio3-4']:checked").val(),
             $("input[name='gridRadio3-5']:checked").val(),
-            $("input[name='gridRadio3-6']:checked").val(),
-            $("input[name='gridRadio3-7']:checked").val(),
-            $("input[name='gridRadio3-8']:checked").val()
+            $("input[name='gridRadio3-6']:checked").val()
         ];
         var respBloque4 = [
             $("input[name='gridRadio4-1']:checked").val(),
@@ -72,9 +66,7 @@ $(function() {
             $("input[name='gridRadio4-3']:checked").val(),
             $("input[name='gridRadio4-4']:checked").val(),
             $("input[name='gridRadio4-5']:checked").val(),
-            $("input[name='gridRadio4-6']:checked").val(),
-            $("input[name='gridRadio4-7']:checked").val(),
-            $("input[name='gridRadio4-8']:checked").val()
+            $("input[name='gridRadio4-6']:checked").val()
         ];
         var respBloque5 = [
             $("input[name='gridRadio5-1']:checked").val(),
@@ -82,9 +74,7 @@ $(function() {
             $("input[name='gridRadio5-3']:checked").val(),
             $("input[name='gridRadio5-4']:checked").val(),
             $("input[name='gridRadio5-5']:checked").val(),
-            $("input[name='gridRadio5-6']:checked").val(),
-            $("input[name='gridRadio5-7']:checked").val(),
-            $("input[name='gridRadio5-8']:checked").val()
+            $("input[name='gridRadio5-6']:checked").val()
         ];
 
         var respLibres = [
