@@ -211,7 +211,7 @@ function setDataForms(){
             method: 'POST',
             body: formData
         })
-        .then(response => response.json()) // <-- porque devolvemos JSON
+        .then(response => response.json()) 
         .then(result => {
         optionData = result.data;
         var filasArr = optionData.split("//");
