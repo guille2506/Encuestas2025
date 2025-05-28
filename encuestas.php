@@ -38,6 +38,7 @@ function obtenerOraciones($idempresa, $nro_bloque) {
     <link href="css/style.css" rel="stylesheet">
     <link href="css/vendors.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
 </head>
 <body class="style_2">
 <div id="preloader"><div data-loader="circle-side"></div></div>
@@ -53,7 +54,8 @@ function obtenerOraciones($idempresa, $nro_bloque) {
 </header>
 
 <div class="wrapper_centering">
-    <div class="container_centering">
+    <div class="container_centering separacion-top">
+
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-xl-6 col-lg-6 d-flex align-items-center ">
