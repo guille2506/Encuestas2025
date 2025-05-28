@@ -123,7 +123,7 @@ function obtenerOraciones($idempresa, $nro_bloque) {
                                                     $i++;
                                                     $name = "bloque{$nro_bloque}_pregunta{$stepCount}_{$i}";
                                                     if (substr($oracion, -1) == "?") {
-                                                        echo "<div class='form-group'><label>$oracion</label><textarea name='$name' class='form-control required' rows='3' onchange='SetValueSession(this.id,this.value)'></textarea></div>";
+                                                        echo "<div class='form-group'><label>$oracion</label><textarea name='texta_$name' class='form-control required' rows='3' onchange='SetValueSession(this.name,this.value)'></textarea></div>";
                                                     } else {
                                                         echo "<div class='form-group'><label>$oracion</label><div class='review_block_smiles'><ul class='clearfix'>";
                                                         $valor = 0;
@@ -194,7 +194,7 @@ function BuscarActivarOption(id,data){
     elem[0].setAttribute("checked","checked");
 }
 function BuscarActivarTextArea(id,data){
-    elem = document.querySelectorAll("#"+id);
+    elem = document.getElementsByName(id);
     elem[0].value = data
 }
 function setDataForms(){
@@ -209,16 +209,14 @@ function setDataForms(){
         .then(response => response.json()) // <-- porque devolvemos JSON
         .then(result => {
         optionData = result.data;
-        
-        console.log(optionData)
         var filasArr = optionData.split("//");
         var arrAllData = [];
         filasArr.forEach(element => { 
             if(element != "||" && element != ""){
                 elem = element.split("||")
-                if(! elem[0].includes("bloque") && ! elem[0].includes("respuestaLibre")){
+                if(! elem[0].includes("bloque") && ! elem[0].includes("texta")){
                     BuscarActivarSelect(elem[0],elem[1])
-                }else if (elem[0].includes("respuestaLibre")){
+                }else if (elem[0].includes("texta")){
                     BuscarActivarTextArea(elem[0],elem[1])
                 }else{
                     BuscarActivarOption(elem[0],elem[1])
@@ -392,7 +390,6 @@ function showThankYouModal() {
     window.location.href = "index.php";
 }
 function SetValueSession(id,data){
-    console.log(id)
 
     const formData = new FormData();
         formData.append('s', id +"-"+ data);
