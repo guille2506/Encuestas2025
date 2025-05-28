@@ -38,6 +38,7 @@ function obtenerOraciones($idempresa, $nro_bloque) {
     <link href="css/style.css" rel="stylesheet">
     <link href="css/vendors.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
 </head>
 <body class="style_2">
 <div id="preloader"><div data-loader="circle-side"></div></div>
@@ -53,11 +54,13 @@ function obtenerOraciones($idempresa, $nro_bloque) {
 </header>
 
 <div class="wrapper_centering">
-    <div class="container_centering">
+    <div class="container_centering separacion-top">
+
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-xl-6 col-lg-6 d-flex align-items-center">
+                <div class="col-xl-6 col-lg-6 d-flex align-items-center ">
                     <div class="main_title_1">
+
                         <h3><img src="images/recursos-logo11.png" width="80" height="80" alt=""> Bienvenido</h3>
                         <p>Por favor responda las siguientes preguntas con sinceridad. Sus respuestas son completamente anónimas y nos ayudarán a mejorar.</p>
                         <p><em>Escala de Respuestas:</em></p>
@@ -70,6 +73,8 @@ function obtenerOraciones($idempresa, $nro_bloque) {
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-5">
+                    <div id="wizard_container" class="separacion-arriba">
+
                     <div id="wizard_container">
                         <div id="top-wizard">
                             <div id="progressbar" style="background: #e9ecef; border-radius: 4px; height: 10px; width: 100%; margin-bottom: 20px;">
@@ -96,8 +101,8 @@ function obtenerOraciones($idempresa, $nro_bloque) {
 
                                     renderSelect('sexo', 'Género', $fun->leergeneros($id_empresa.'/csvfiles/generos.csv'));
                                     renderSelect('edad', 'Edad', $fun->leeredades($id_empresa.'/csvfiles/edades.csv'));
-                                   // renderSelect('area', 'Área', $fun->leerareas($id_empresa.'/csvfiles/areas.csv'));//
-                                   // renderSelect('antiguedad', 'Antigüedad', $fun->leerantiguedad($id_empresa.'/csvfiles/antiguedad.csv'));//
+                                    renderSelect('area', 'Área', $fun->leerareas($id_empresa.'/csvfiles/areas.csv'));//
+                                    renderSelect('antiguedad', 'Antigüedad', $fun->leerantiguedad($id_empresa.'/csvfiles/antiguedad.csv'));//
                                     renderSelect('niveleducativo', 'Nivel educativo', $fun->leerniveleducativo($id_empresa.'/csvfiles/niveleducativo.csv'));
                                     ?>
                                 </div>

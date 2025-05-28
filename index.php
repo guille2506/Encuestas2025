@@ -69,10 +69,10 @@ function obtenerAlumnos($idempresa) {
                 <div class="col-lg-6" id="contrasena_container">
                     <form class="form" onsubmit="event.preventDefault(); verificarClave();">
                          <img src="images/Logo2.png" alt="Logo" style="height: 100px; margin-bottom: 20px;">
-                        <h3>Encuestas Clima Laboral</h3>
+                        <h3>Encuesta Clima Laboral</h3>
                         <div class="form-group">
-                            <label for="clave">Contraseña de la Empresa</label>
-                            <input required type="password" id="clave" class="form-control" placeholder="Ingresa tu clave">
+                            <label for="clave">Codigo de empresa</label>
+                            <input required type="password" id="clave" class="form-control" placeholder="Ingresar codigo">
                         </div>
                         <button type="submit" class="btn_1 full-width">Ingresar</button>
                         <p id="mensaje" style="color: red;"></p>

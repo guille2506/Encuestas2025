@@ -30,9 +30,11 @@ body.style_2 {
 }
 @media (max-width: 460px) {
   body.style_2 {
-    background: hsl(202, 63.60%, 50.40%);
+    background: rgb(42, 74, 219) url(../images/pattern_3.svg) no-repeat center left;
+    background-size: cover;
   }
 }
+
 body.style_3 {
   background: #b65742 url(../images/pattern_3.svg) no-repeat center left;
   -webkit-background-size: cover;
@@ -65,11 +67,11 @@ label {
   display: inline-block;
   font-weight: 400;
   margin-bottom: 8px;
-  color: #fff7f7;
-  background-color: #00000067;
+  color: #000000;
+  background-color: #ffffff7e;
   padding: 8px 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
+  font-size: 18px;
 }
 hr {
   margin: 30px 0 30px 0;
@@ -97,7 +99,7 @@ a {
 }
 a:hover,
 a:focus {
- background-color: #4ccd6a;
+ background-color: #2b3fc4;
 }
 a.animated_link {
   position: relative;
@@ -176,7 +178,7 @@ a.btn_1,
 }
 a.btn_1:hover,
 .btn_1:hover {
-  background-color: #4ccd6a;
+  background-color: #2b3fc4;
 }
 #preloader {
   position: fixed;
@@ -372,24 +374,15 @@ footer ul li a:hover {
 .wrapper_centering {
   width: 100%;
   margin: -90px auto 0;
-  height: 100%;
+  min-height: 100vh;
   text-align: left;
   clear: both;
   display: table;
   position: relative;
   z-index: 1;
-  background: -moz-linear-gradient(
-    165deg,
-    rgba(0, 0, 0, 0.7) 0%,
-    transparent 100%
-  );
-  background: -webkit-linear-gradient(
-    165deg,
-    rgba(0, 0, 0, 0.7) 0%,
-    transparent 100%
-  );
-  background: linear-gradient(165deg, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  background: transparent;
 }
+
 .container_centering {
   vertical-align: middle;
   display: table-cell;
@@ -1662,5 +1655,41 @@ body[dir="rtl"] .fl-form .fl-wrap-select:after {
   padding: 0 15px;
   box-sizing: border-box;
 }
+
+
+
+.fl-label {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+
+select option {
+  background-color: #f0f0f0;
+  color: #222;
+}
+
+.separacion-arriba {
+  padding-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .separacion-arriba {
+    padding-top: 60px;
+  }
+}
+
+.separacion-top {
+  padding-top: 60px;
+}
+
+@media (max-width: 767px) {
+  .separacion-top {
+    padding-top: 10px;
+  }
+}
+
+
+
 /*llegaste al final
 
